@@ -1,23 +1,17 @@
+const publicURL = import.meta.env.VITE_REACT_APP_PUBLIC_URL_Images;
+
 // eslint-disable-next-line react/prop-types
-const Modal = ({toggleModal, showModal}) => {
-    // const [showModal, setShowModal] = useState(false)
-    // const toggleModal = () => {
-    //     setShowModal(!showModal)
-    // };
+const Modal = ({ showModal, imgSrc}) => {
+   
     return (
         <>
-            <button
-                className="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                type="button"
-                onClick={toggleModal}
-            >
-                Open regular modal
-            </button>
             {showModal && (
                 <div className="overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center flex">
                     <div className="relative w-auto my-6 mx-auto max-w-3xl">
-                        {/* <!--content--> */}
-                        <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none"></div>
+                        <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                        <img src={`${publicURL}/${imgSrc}`} alt="card image" />
+
+                        </div>
                     </div>
                 </div>
             )}

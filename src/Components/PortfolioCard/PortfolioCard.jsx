@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { BsPlusLg } from "react-icons/bs";
 import Modal from './../Modal/Modal';
+const publicURL = import.meta.env.VITE_REACT_APP_PUBLIC_URL_Images;
 
 // eslint-disable-next-line react/prop-types
 const PortfolioCard = ({ imgSrc, className }) => {
@@ -20,9 +21,9 @@ const PortfolioCard = ({ imgSrc, className }) => {
             className={`${className} relative rounded-xl overflow-hidden cursor-pointer hover:show`}
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
-            // onClick={toggleModal}
+            onClick={toggleModal}
         >
-            <img src={`src/assets/images/${imgSrc}`} alt="card image" />
+            <img src={`${publicURL}/${imgSrc}`} alt="card image" />
             <div
                 className={`${
                     isShown ? "opacity-100" : "opacity-0"
@@ -30,7 +31,7 @@ const PortfolioCard = ({ imgSrc, className }) => {
             >
                 <BsPlusLg className="text-[6rem] text-white" />
             </div>
-            {/* <Modal toggleModal={toggleModal} showModal={showModal}/> */}
+            <Modal showModal={showModal} imgSrc={imgSrc}/>
         </div>
         
     );

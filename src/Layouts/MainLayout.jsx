@@ -6,7 +6,7 @@ const MainLayout = () => {
   return (
     <>
     <Header />
-    <Outlet />
+    <Outlet className="h-full"/>
     <Footer />
     </>
   )

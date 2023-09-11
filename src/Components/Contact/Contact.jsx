@@ -2,7 +2,7 @@ import StarIcon from "../StartIcon/StarIcon";
 
 const Contact = () => {
     return (
-        <div className="container mx-auto p-5 flex flex-col items-center">
+        <div className="container mx-auto p-5 flex flex-col items-center min-h-[calc(100vh_-_380px)]">
              <h2 className="uppercase text-2xl md:text-3xl lg:text-4xl font-bold ">contact component</h2>
              <StarIcon color="#000"/>
             <form action="" className="p-5 w-[500px] max-w-full mx-auto">
