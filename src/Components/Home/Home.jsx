@@ -1,3 +1,4 @@
+import StarIcon from "../StartIcon/StarIcon";
 
 const Home = () => {
   
@@ -8,7 +9,7 @@ const Home = () => {
             <img src="src/assets/images/avataaars.svg" className="w-64 max-w-full" alt="" />
           </div>
           <h2 className="uppercase text-2xl md:text-3xl lg:text-4xl font-bold mt-10 ">start framework</h2>
-          <app-star-icon className="my-3" color="#fff"></app-star-icon>
+          <StarIcon />
           <p >Graphic Artist - Web Designer - Illustrator</p>
         </div>
       </div>

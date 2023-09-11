@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-const pagesData = [
+import { Link, NavLink } from "react-router-dom";
+import './Header.css'
+const pages = [
     {
         name: "home",
         path: "home",
@@ -20,7 +21,6 @@ const pagesData = [
 ];
 const Header = () => {
     let [toggleMenuProperty, setToggleMenuProperty] = useState(true);
-    let [pages, setPages] = useState(pagesData);
     const toggleMenu = () => {
         setToggleMenuProperty(!toggleMenuProperty)
     };
@@ -44,9 +44,9 @@ const Header = () => {
                         {pages.slice(1).map((page) => {
                             return (
                                 <li key={page.name} className="px-5 py-3 font-bold capitalize">
-                                    <Link to={page.path} className="p-2">
+                                    <NavLink to={page.path} className="p-2" activeClassName="active">
                                         {page.name}
-                                    </Link>
+                                    </NavLink>
                                 </li>
                             );
                         })}

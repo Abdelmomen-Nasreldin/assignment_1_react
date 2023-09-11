@@ -1,0 +1,19 @@
+.star-icon {
+    color: var(--color);
+}
+.star-icon::before,
+.star-icon::after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 80px;
+    background-color: var(--color);
+    top: 50%;
+    left: -1rem;
+    transform: translate(-100%, -50%);
+}
+.star-icon::after {
+    left: auto;
+    right: -1rem;
+    transform: translate(100%, -50%);
+}
