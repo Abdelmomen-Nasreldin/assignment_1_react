@@ -1,9 +1,9 @@
-import { useState } from "react";
-const Modal = () => {
-    const [showModal, setShowModal] = useState(false)
-    const toggleModal = () => {
-        setShowModal(!showModal)
-    };
+// eslint-disable-next-line react/prop-types
+const Modal = ({toggleModal, showModal}) => {
+    // const [showModal, setShowModal] = useState(false)
+    // const toggleModal = () => {
+    //     setShowModal(!showModal)
+    // };
     return (
         <>
             <button

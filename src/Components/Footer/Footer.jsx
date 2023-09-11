@@ -1,3 +1,4 @@
+import { BsFacebook, BsGlobe, BsLinkedin, BsTwitter } from "react-icons/bs"
 
 const Footer = () => {
   return (
@@ -12,10 +13,10 @@ const Footer = () => {
       <div className="links text-white text-center flex-[1_0_300px]">
         <h3 className="text-xl md:text-2xl lg:text-3xl mb-2 uppercase font-semibold">AROUND THE WEB</h3>
         <ul className="flex flex-wrap justify-center items-center gap-2.5">
-          <li className=""><a href="#" className="flex items-center justify-center h-[35px] w-[35px] border rounded-[50%] border-solid"><ng-icon name="bootstrapFacebook"></ng-icon></a></li>
-          <li className=""><a href="#" className="flex items-center justify-center h-[35px] w-[35px] border rounded-[50%] border-solid"><ng-icon name="bootstrapTwitter"></ng-icon></a></li>
-          <li className=""><a href="#" className="flex items-center justify-center h-[35px] w-[35px] border rounded-[50%] border-solid"><ng-icon name="bootstrapLinkedin"></ng-icon></a></li>
-          <li className=""><a href="#" className="flex items-center justify-center h-[35px] w-[35px] border rounded-[50%] border-solid"><ng-icon name="bootstrapGlobe"></ng-icon></a></li>
+          <li className=""><a href="#" className="flex items-center justify-center h-[35px] w-[35px] border rounded-[50%] border-solid"> <BsFacebook /></a></li>
+          <li className=""><a href="#" className="flex items-center justify-center h-[35px] w-[35px] border rounded-[50%] border-solid"><BsTwitter /></a></li>
+          <li className=""><a href="#" className="flex items-center justify-center h-[35px] w-[35px] border rounded-[50%] border-solid"><BsLinkedin /></a></li>
+          <li className=""><a href="#" className="flex items-center justify-center h-[35px] w-[35px] border rounded-[50%] border-solid"><BsGlobe /></a></li>
         </ul>
       </div>
       <div className="about text-white text-center flex-[1_0_300px]">
